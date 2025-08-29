@@ -1,8 +1,10 @@
 # SALES FORECASTING 
 Overview
 ```bash
-This project builds a complete pipeline for sales forecasting and analysis using advanced machine learning models. It extracts and processes transactional sales data from SQL databases, applies feature engineering
-and encoding, and trains regression models (XGBoost and LightGBM) to predict future sales. The workflow emphasizes data-driven decision making for marketing, supply chain optimization, and discount strategies.
+This project builds a complete pipeline for sales forecasting and analysis using advanced machine learning models.
+It extracts and processes transactional sales data from SQL databases, applies feature engineering
+and encoding, and trains regression models (XGBoost and LightGBM) to predict future sales.
+The workflow emphasizes data-driven decision making for marketing, supply chain optimization, and discount strategies.
 ```
 # Key Features 
 ``` bash
