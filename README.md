@@ -26,6 +26,27 @@ git clone <repo_url>
 cd <repo_name>
 ```
 
+# Workflow
+1. Data Collection & Preprocessing
+   - Gather sales, discounts, orders, AOV, weather, holidays, and temporal features.
+   - Clean & transform (handle missing data, apply Box-Cox for skewed features).
+2. Feature Engineering
+   - Create lag features (last 7/14/30 days sales).
+   - Add temporal features (day of week, month, season, holidays).
+   - Integrate weather and event data.
+ 3. Model Training
+    - Train ML models (XGBoost, LightGBM, LSTM, or ensemble).
+    - Optimize with hyperparameter tuning.
+4. Validation & Backtesting
+   - Use rolling window backtesting to simulate real-world forecasting.
+   - Evaluate using RMSE, MAPE, and business KPIs (forecast accuracy vs. demand planning).
+5. Forecast Generation
+   - Predict daily/weekly sales at city, zone, or outlet level.
+   - Generate forecasts for both total sales and discounted vs. organic sales.
+6. Business Integration
+   - Feed forecasts into supply chain planning, discount strategy, and workforce allocation.
+   - Compare actual vs. forecast for continuous improvement.
+
 # Result and Performance 
 # Sales Trends 
 <img width="1721" height="702" alt="Screenshot 2025-05-27 183025" src="https://github.com/user-attachments/assets/17d3712d-aa5a-4cad-9bd5-b5158129e737" />
@@ -42,5 +63,14 @@ Examples:
  - Root Mean Squared Error (RMSE): Within an acceptable error band, indicating reliable short-term forecasts.
  - R² Score (Coefficient of Determination): Close to 0.9+, showing the models explain a large portion of sales variance.
 
-
+# Future Improvements 
+1. Real-Time Forecast Adjustments
+   - Shift from batch daily forecasts to near real-time updates (e.g., during big events or promotions).
+   - Business Value: Dynamic discount and fleet allocation to capture demand spikes.
+2. Profit-Weighted Forecasting
+   - Instead of just predicting sales, predict profitability-adjusted sales.
+   - Business Value: Ensures forecasts guide decisions that actually improve margins, not just volumes.
+3. Forecast Explainability
+   - Use SHAP or feature importance plots to show why sales will increase/decrease.
+   - Business Value: Builds trust with decision-makers by linking forecast to drivers (e.g., “Rainy weather + Friday = +12% demand”).
 
