@@ -8,7 +8,7 @@ The workflow emphasizes data-driven decision making for marketing, supply chain 
 ```
 # Key Features 
 ``` bash
-- Automated Data Extraction from PostgreSQL using SQLAlchemy with .env for credentials.
+ - Automated Data Extraction from PostgreSQL using SQLAlchemy with .env for credentials.
  - Comprehensive Preprocessing including missing value handling, categorical encoding, and scaling.
  - Feature Engineering for temporal trends, discounts, and outlet-specific performance.
  - Regression Models: XGBoost and LightGBM tuned with GridSearchCV.
