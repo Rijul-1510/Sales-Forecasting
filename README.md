@@ -1,5 +1,5 @@
 # SALES FORECASTING 
-Overview
+# Overview
 ```bash
 This project builds a complete pipeline for sales forecasting and analysis using advanced machine learning models.
 It extracts and processes transactional sales data from SQL databases, applies feature engineering
