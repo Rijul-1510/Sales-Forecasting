@@ -27,6 +27,9 @@ cd <repo_name>
 ```
 
 # Result and Performance 
+# Sales Trends 
+<img width="1721" height="702" alt="Screenshot 2025-05-27 183025" src="https://github.com/user-attachments/assets/17d3712d-aa5a-4cad-9bd5-b5158129e737" />
+
 # Model Results 
 The models provide highly accurate outlet-level forecasts.
 Examples:
